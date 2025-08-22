@@ -1,0 +1,24 @@
+[workspace]
+members = [
+	"core",
+	"database",
+	"services",
+	"tests",
+	"src-tauri",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["WhereItBelongs Team <dev@wib.gg>"]
+license = "Apache-2.0 OR MIT"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+strip = "symbols"
+
+[profile.dev]
+incremental = true

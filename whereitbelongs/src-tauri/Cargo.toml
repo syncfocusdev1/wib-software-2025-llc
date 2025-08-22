@@ -1,0 +1,18 @@
+[package]
+name = "whereitbelongs-tauri"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4"
+wib-core = { path = "../core" }
+wib-services = { path = "../services" }
+wib-database = { path = "../database" }
+
+tauri = { version = "1", features = ["shell-open", "updater"] }
+
+[build-dependencies]
+tauri-build = { version = "1" }

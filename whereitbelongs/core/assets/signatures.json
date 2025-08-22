@@ -1,0 +1,8 @@
+{
+	"signatures": [
+		{ "name": "RAT.NJRat.heur", "family": "njRAT", "pattern": "njrat|njrat.*connect|njrat.*keylogger" },
+		{ "name": "RAT.Quasar.heur", "family": "Quasar", "pattern": "quasar.*client|quasar.*connect|quasar.*keylogger" },
+		{ "name": "RAT.Remcos.heur", "family": "Remcos", "pattern": "remcos|remcos.*connect|remcos.*keylogger" },
+		{ "name": "Script.Downloader.Generic", "family": "Generic", "pattern": "invoke-webrequest|downloadstring|powershell -enc" }
+	]
+}

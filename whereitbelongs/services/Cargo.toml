@@ -1,0 +1,17 @@
+[package]
+name = "wib-services"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+notify = { version = "6", default-features = false, features = ["macos_fsevent"] }
+log = "0.4"
+sysinfo = { version = "0.30", default-features = false, features = ["multithread"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+crossbeam-channel = "0.5"
+chrono = { version = "0.4", features = ["clock"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+wib-core = { path = "../core" }
