@@ -1,0 +1,12 @@
+[package]
+name = "wib-tests"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+wib-core = { path = "../core" }
+wib-database = { path = "../database" }
+anyhow = "1"
+rand = "0.8"
+serde_json = "1"
+tempfile = "3"

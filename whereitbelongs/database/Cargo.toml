@@ -1,0 +1,17 @@
+[package]
+name = "wib-database"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+thiserror = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rand = "0.8"
+argon2 = { version = "0.5", features = ["std"] }
+aes-gcm = { version = "0.10", features = ["aes"] }
+base64 = "0.22"
+zeroize = "1"
+chrono = { version = "0.4", features = ["clock"] }

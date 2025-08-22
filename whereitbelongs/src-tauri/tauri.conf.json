@@ -1,0 +1,35 @@
+{
+	"package": {
+		"productName": "WhereItBelongs",
+		"version": "0.1.0"
+	},
+	"build": {
+		"beforeDevCommand": "pnpm dev",
+		"beforeBuildCommand": "pnpm build",
+		"devPath": "../ui/dist",
+		"distDir": "../ui/dist"
+	},
+	"tauri": {
+		"bundle": {
+			"active": true,
+			"targets": ["msi"],
+			"identifier": "gg.wib.app",
+			"windows": {
+				"allowDowngrades": true,
+				"timestampUrl": null
+			},
+			"icon": ["icons/64x64.png"]
+		},
+		"updater": {
+			"active": true,
+			"endpoints": ["https://updates.wib.gg/whereitbelongs/manifest.json"]
+		},
+		"windows": [
+			{
+				"title": "WhereItBelongs",
+				"width": 1200,
+				"height": 800
+			}
+		]
+	}
+}
